@@ -49,7 +49,7 @@ function test(states, history) {
             states[2] = "DIRTY";
         } else {
             // Detener si se han visitado 8 estados únicos
-            document.getElementById("log").innerHTML += "<br><br>8 estados unicos visitados o ambas habitaciones estan limpias. Parada.";
+            document.getElementById("log").innerHTML += "<br><br>Resultado";
             document.getElementById("log").innerHTML += "<br><b>Estados visitados:</b> ";
             for (let i = 0; i < history.length; i++) {
                 document.getElementById("log").innerHTML += `<br>State ${i + 1}: Location: ${history[i].location} | Room A: ${history[i].stateA} | Room B: ${history[i].stateB}`;
